@@ -5,7 +5,9 @@ f.addEventListener('submit', e=>{
   //collecting data and getting the variables ready...
   const dia = document.querySelector('dialog');
   let n1 = document.getElementById('n1').value;
+  n1 = n1.replace(" ", "")
   let n2 = document.getElementById('n2').value;
+  n2 = n2.replace(" ", "")
   let n3 = 'love'
   let s = n1+n3+n2
   
