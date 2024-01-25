@@ -1,0 +1,58 @@
+@font-face {
+  font-family: Bookl;
+  src: url(/fonts/BookerlyLight.ttf);
+}
+@font-face {
+  font-family: Book;
+  src: url(/fonts/Bookerly.ttf);
+}
+
+* {
+  margin: 0;
+  text-align: center;
+}
+
+body {
+  font-family: Book;
+  background-color: #800080;
+}
+
+div.top {
+  background-color: #4b0082;
+  margin-top: 0.5rem;
+  padding: 0.5rem 5rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+h1 {
+  background: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main {
+  margin: 3rem 1rem;
+}
+
+h3 {
+  letter-spacing: 0.12rem;
+}
+
+main p {
+  margin-top: 2rem;
+  min-width: 65ch;
+  text-align: center;
+}
+
+div.end {
+  font-family: Bookl;
+  background-color: black;
+  color: whitesmoke;
+  padding: 0.5rem;
+  bottom: 0;
+}
+
+c {
+  color: red;
+}

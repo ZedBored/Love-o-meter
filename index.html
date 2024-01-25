@@ -4,17 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Love O meter</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Love O meter</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla doloremque
-      neque quo voluptas rem, nostrum eum iure deserunt alias maiores eos, sint,
-      harum similique corporis voluptates itaque illum deleniti magnam.
-    </p>
-    <button type="button" onclick="location.href='./love.html'">
-      Go here for the meter
-    </button>
+    <div class="top">
+      <h1>Love O meter</h1>
+    </div>
+
+    <main>
+      <h3>A website to test how much a person loves the other person.</h3>
+      <p>
+        The website will tell you about how much the person in the first input
+        box loves the person in the second input box in a percentage from 0% to
+        100%. It's quite extremely rare to see 100% and 0%. Just give it a shot
+        and know you compatibility with your crush or partner
+      </p>
+    </main>
+
+    <form id="f">
+      <div>
+        <label for="n1">Name of the first person</label>
+        <input
+          type="text"
+          id="n1"
+          placeholder="Please Enter the name"
+          required
+        />
+      </div>
+      <div>
+        <label for="n2">Name of the second person</label>
+        <input
+          type="text"
+          id="n2"
+          placeholder="Please Enter the name"
+          required
+        />
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+      <dialog>
+        <h1 id="big"></h1>
+        <p id="p"></p>
+      </dialog>
+    </form>
+
+    <div class="end">
+      <p>
+        <c>Warning:</c> This website is only for fun, Don't take it seriously.
+        It all works only on the alphabetical characters you put in there.
+      </p>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

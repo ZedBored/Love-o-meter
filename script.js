@@ -5,11 +5,11 @@ f.addEventListener("submit", (e) => {
   //collecting data and getting the variables ready...
   const dia = document.querySelector("dialog");
   let n1 = document.getElementById("n1").value;
-  n3 = n1.replace(" ", "");
+  let n3 = n1.replace(" ", "");
   let n2 = document.getElementById("n2").value;
-  n4 = n2.replace(" ", "");
-  let n3 = "love";
-  let s = n3 + n4 + n2;
+  let n4 = n2.replace(" ", "");
+  let n5 = "love";
+  let s = n3 + n4 + n5;
 
   //taking out every character from the input to the main list...
   let o = {};
@@ -215,7 +215,7 @@ f.addEventListener("submit", (e) => {
       document.getElementById("big").innerText = `${y}%`;
       document.getElementById("p").innerText = `${n1} loves ${n2} ${y}%`;
     }
-    
+
     dia.showModal();
   } else {
     // Runs if the list characters are 2 and show the results
