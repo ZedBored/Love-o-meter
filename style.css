@@ -1,20 +1,23 @@
 @font-face {
-  font-family: Bookl;
+  font-family: BookerlyLight;
   src: url(/fonts/BookerlyLight.ttf);
 }
+
 @font-face {
-  font-family: Book;
+  font-family: Bookerly;
   src: url(/fonts/Bookerly.ttf);
 }
 
 * {
   margin: 0;
-  text-align: center;
 }
 
 body {
-  font-family: Book;
-  background-color: #800080;
+  font-family: BookerlyLight;
+  background: linear-gradient(-225deg, #ff3cac 0%, #562b7c 52%, #2b86c5 100%);
+  color: #90d700;
+  text-align: center;
+  height: 100vh;
 }
 
 div.top {
@@ -29,6 +32,7 @@ h1 {
   background: linear-gradient(to top, #f77062 0%, #fe5196 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: Bookerly;
 }
 
 main {
@@ -37,22 +41,94 @@ main {
 
 h3 {
   letter-spacing: 0.12rem;
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-main p {
-  margin-top: 2rem;
-  min-width: 65ch;
-  text-align: center;
+form {
+  text-align: left;
+  border: #fe5196 solid 0.3rem;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 2.5rem 5rem;
+}
+
+input {
+  box-shadow: inset #abacaf 0 0 0 2px;
+  border: 0;
+  background: rgba(0, 0, 0, 0);
+  appearance: none;
+  width: 100%;
+  position: relative;
+  border-radius: 0.1875rem;
+  padding: 0.5625rem 0.75rem;
+  margin: 1rem 0;
+  line-height: 1.4;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+input:hover {
+  box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 2px;
+}
+
+input:focus {
+  background: #fff;
+  outline: 0;
+  box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
+}
+
+form div {
+  display: inline;
+}
+
+button {
+  font-family: BookerlyLight;
+  display: inline-block;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-size: 0.8175rem;
+  height: 1.8rem;
+  background-color: #9147ff;
+  color: whitesmoke;
+  letter-spacing: 0.07rem;
+  padding: 0 1.2rem;
+}
+
+button:hover {
+  background-color: #772ce8;
 }
 
 div.end {
-  font-family: Bookl;
   background-color: black;
-  color: whitesmoke;
-  padding: 0.5rem;
+  position: absolute;
   bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 
 c {
   color: red;
+  font-family: BookerlyLight;
+}
+
+dialog {
+  border-radius: 1rem;
+  background: linear-gradient(-225deg, #ff3cac 0%, #562b7c 52%, #2b86c5 100%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#big{
+  margin: 1rem;
+}
+
+#p{
+  margin: 1rem;
 }

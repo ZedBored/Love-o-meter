@@ -13,49 +13,46 @@
 
     <main>
       <h3>A website to test how much a person loves the other person.</h3>
-      <p>
-        The website will tell you about how much the person in the first input
-        box loves the person in the second input box in a percentage from 0% to
-        100%. It's quite extremely rare to see 100% and 0%. Just give it a shot
-        and know you compatibility with your crush or partner
-      </p>
     </main>
 
     <form id="f">
       <div>
-        <label for="n1">Name of the first person</label>
+        <label for="n1"></label>
         <input
           type="text"
           id="n1"
-          placeholder="Please Enter the name"
+          placeholder="Name of the first person"
           required
         />
       </div>
+      <br />
       <div>
-        <label for="n2">Name of the second person</label>
+        <label for="n2"></label>
         <input
           type="text"
           id="n2"
-          placeholder="Please Enter the name"
+          placeholder="Name of the second person"
           required
         />
       </div>
+      <br />
       <div>
         <button type="submit">Submit</button>
       </div>
-      <dialog>
-        <h1 id="big"></h1>
-        <p id="p"></p>
-      </dialog>
     </form>
+
+    <dialog id="dia">
+      <h1 id="big"></h1>
+      <p id="p"></p>
+      <button autofocus id="close">Close</button>
+    </dialog>
 
     <div class="end">
       <p>
-        <c>Warning:</c> This website is only for fun, Don't take it seriously.
-        It all works only on the alphabetical characters you put in there.
+        <c>Warning: </c> This website is just for fun, don't take it
+        seriously!!! This all works on numbers.
       </p>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

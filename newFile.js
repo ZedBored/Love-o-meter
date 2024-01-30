@@ -1,4 +1,3 @@
-let f = document.getElementById("f");
 f.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -141,6 +140,7 @@ f.addEventListener("submit", (e) => {
     }
   }
   y = Number(y);
+  console.log(l, x, y);
 
   // Checking if the number in 100...
   if (y == 100) {
@@ -148,6 +148,7 @@ f.addEventListener("submit", (e) => {
     document.getElementById("p").innerText = `${n1} loves ${n2} ${y}%`;
     dia.showModal();
   }
+
   // if not 100 than making 4& 3 characters to 2 characters for the percentage...
   else if (y > 100) {
     // runs only if x is empty list...
@@ -164,7 +165,6 @@ f.addEventListener("submit", (e) => {
             x[0] = l[0] + l[2];
             x[1] = l[1];
           }
-          l = [];
         }
       } else {
         x[0] = l[0] + l[3];
@@ -190,16 +190,18 @@ f.addEventListener("submit", (e) => {
       if (x.length == 3) {
         x[0] = x[0] + x[2];
         x.splice(2, 1);
+        console.log(l, x);
+
         for (let i = 0; i < 1; i++) {
           if (x[i] > 9) {
             let a = String(x[i]);
             x.splice(i, i + 1);
             x.splice(i, 0, a.charAt(0), a.charAt(1));
             x = x.map(Number);
-            l[0] = x[0] + x[2];
+            l[0] = x[0] + l[2];
             l[1] = x[1];
           }
-          x = [];
+          console.log(l, x);
         }
       } else {
         l[0] = x[0] + x[3];
