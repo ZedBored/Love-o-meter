@@ -24,27 +24,14 @@ f.addEventListener("submit", (e) => {
     }
   }
   let l = Object.values(o);
-  console.log(l);
 
   //making the 23 to 2,3 kind of stuff...
-  let b = 0;
   for (let i = 0; i < l.length; i++) {
-    b++;
-
     if (l[i] > 9) {
-      b++;
       let a = String(l[i]);
       l.splice(i, i + 1);
       l.splice(i, 0, a.charAt(0), a.charAt(1));
       l = l.map(Number);
-
-      if (b > 20) {
-        break;
-      }
-    }
-
-    if (b > 20) {
-      break;
     }
   }
 
@@ -110,12 +97,10 @@ f.addEventListener("submit", (e) => {
       }
       x = [];
     }
-    if (c > 20) {
+    if (c > 5) {
       break;
     }
   }
-
-  console.log(l, x);
 
   // getting ready to check if the number is 100 or not and 23-> 2,3...
   let y = "";
@@ -163,8 +148,8 @@ f.addEventListener("submit", (e) => {
             l = l.map(Number);
             x[0] = l[0] + l[2];
             x[1] = l[1];
+            l = [];
           }
-          l = [];
         }
       } else {
         x[0] = l[0] + l[3];
@@ -198,8 +183,8 @@ f.addEventListener("submit", (e) => {
             x = x.map(Number);
             l[0] = x[0] + x[2];
             l[1] = x[1];
+            x = [];
           }
-          x = [];
         }
       } else {
         l[0] = x[0] + x[3];
