@@ -1,11 +1,11 @@
 @font-face {
   font-family: BookerlyLight;
-  src: url(/fonts/BookerlyLight.ttf);
+  src: url(./fonts/BookerlyLight.ttf);
 }
 
 @font-face {
   font-family: Bookerly;
-  src: url(/fonts/Bookerly.ttf);
+  src: url(./fonts/Bookerly.ttf);
 }
 
 * {
