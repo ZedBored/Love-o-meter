@@ -4,5 +4,5 @@ Basically maths made for love. Enter the names and get how much the name of the 
 ## Link below
 
 ```
-https://genzene.github.io/Love-o-meter/
+https://ZedCord.github.io/Love-o-meter/
 ```
